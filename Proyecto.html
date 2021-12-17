@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title> PRACTICA CSS</title>
+</head>
+  <body>
+      <nav class="nav-titulo"> <a href="https://mi.cab/" target="_blank"><img src="imagenes/micab.png" alt="micab" width="150px" height="100%"></a></nav>
+      <h2>Add Contact</h2>
+      <hr>
+      <div class="nav"> 
+        <ul>
+          <li><a href="#"> Dashboard</a> /</li>
+          <li><a href="#"> Accounts</a> /</li>
+          <li><a href="#"> MiCab Default(cuenta de pruebas)</a> /</li>
+          <li><a href="#"> Edit Rates</a>  </li>
+        </ul>
+      </div>
+      <form action="">
+        <div class="main">
+            <div class="titulo">
+              <button> &lt;&lt; Back </button>
+            </div>
+            <div class="grid"> 
+              <div class="bloque a"> <p class="titulo">Service type</p>
+                <div class="imagen"><img src="imagenes/carro.png" style="height:100%; width:100%;" alt="cab"></div>
+                <div class="grid">
+                    <div class="col1 row1">
+                      <label for="apply-rates">Apply Rates</label> <br>
+                      <input type="checkbox" id="apply-rates" name="apply-rates"> 
+                    </div>
+                    <div class="col1 row2">
+                      <label for="comission-type">Comission Type:</label> <br>
+                      <input type="text" id="comission-type" name="comission-type" readonly="true" style="width: 20%;">
+                    </div>
+                  <div class="col2 row1">
+                    <label for="type-name">Type Name:</label> 
+                    <input type="text" readonly="true" style="width: 20%; height: auto;"> 
+                  </div>
+                  <div class="col2 row2">
+                    <label for="comission-amount">Comission Amount</label>
+                    <input type="text" name="comission-amount" id="comission-amount" readonly="true" style="width: 20%;">
+                  </div>
+                </div>
+              </div>
+              <div class="bloque b"> <p class="titulo">Global Rates</p> 
+                <div class="grid">
+                  <div class="col1 row1">
+                    <label for="max-amount-agency" class="asterisco">Maximum amount agency</label><br>
+                    <span class="identificador">$</span><input type="number" id="max-amount-agency" name="max-amount-agency" min="0" step="0.1">
+                  </div>
+                  <div class="col2 row1">
+                    <label for="credit-top" class="asterisco">Credit Top</label> <br>
+                    <span class="identificador">$</span><input type="number" name="credit-top" id="credit-top">
+                  </div>
+                  <div class="col3 row1">
+                    <label for="no-show-on-demand-type" class="asterisco">No Show On Demand Type</label> <br> 
+                    <select name="no-show-on-demand-type" id="no-show-on-demand-type">
+                      <option value="money">Money</option>
+                      <option value="credit">Credit</option>
+                    </select>
+                  </div>
+                  <div class="col4 row1">
+                    <label for="no-show-on-demand-value" class="asterisco">No Show On Demand Value</label> <br>
+                    <input type="number" name="no-show-on-demand-value" id="">
+                  </div>
+                  <div class="col1 row2">
+                    <label for="rate-demand" class="asterisco">Rate Demand</label> <br>
+                    <span class="identificador">$</span><input type="number" name="rate-demand" id="rate-demand">
+                  </div>
+                  <div class="col2 row2">
+                    <label for="rate-booking" class="asterisco">Rate Booking</label> <br>
+                    <span class="identificador">$</span><input type="number" name="rate-booking" id="rate-booking">
+                  </div>
+                  <div class="col3 row2" >
+                    <label for="fee-cancellation-demand" class="asterisco">Fee cancellation Demand</label> <br>
+                    <span class="identificador">$</span><input type="number" name="fee-cancellation-demand" id="fee-cancellation-demand">
+                  </div>
+                  <div class="col4 row2">
+                    <label for="fee-cancelation-booking" class="asterisco">Fee Cancelation Booking</label> <br>
+                    <span class="identificador">$</span><input type="number" name="fee-cancelation-booking" id="fee-cancelation-booking">
+                  </div>
+                  <div class="col1 row3">
+                    <label for="no-show-button-time" class="asterisco">No show button time</label> <br>
+                    <span class="identificador">$</span><input type="number" name="no-show-button-time" id="no-show-button-time">
+                  </div>
+                  <div class="col2 row3">
+                    <label for="tolerance-time" class="asterisco">Tolerance Time</label> <br>
+                    <span class="identificador">$</span><input type="number" name="tolerance-time" id="tolerance-time">
+                  </div>
+                  <div class="col3 row3">
+                    <label for="no-show-booking-type" class="asterisco">No Show Booking Type</label>
+                    <select name="no-show-booking-type" id="no-show-booking-type">
+                      <option value="money">money</option>
+                      <option value="credit">credit</option>
+                    </select>
+                  </div>
+                  <div class="col4 row3">
+                      <label for="no-show-booking-value" class="asterisco">No show booking value</label> <br>
+                      <span class="identificador">$</span><input type="number" name="no-show-booking-value" id="no-show-booking-value">
+                  </div>
+                  <div class="col1 row4">
+                    <label for="waypoint-rate" class="asterisco">Waypoint Rate</label> <br>
+                    <span class="identificador">$</span><input type="number" name="waypoint-rate" id="waypoint-rate">
+                  </div>
+                </div>
+              </div>
+              <div class="bloque c">
+                <p class="titulo">Starting <input type="checkbox" name="starting-block" id="starting-block"></p> 
+                <div class="grid">
+                    <div class="col1 row1">
+                      <label for="starting-now" class="asterisco">Starting(now)</label> <br>
+                      <span class="identificador">$</span><input type="number" name="starting-now" id="starting-now">
+                    </div>
+                    <div class="col2 row1">
+                      <label for="starting-reservation" class="asterisco">Starting(reservation)</label> <br>
+                      <span class="identificador">$</span><input type="number" name="starting-reservation" id="starting-reservation">
+                    </div>
+                </div>
+              </div>
+              <div class="bloque d"> 
+                <p class="titulo"> Per Minute<input type="checkbox" name="perminute" id="perminute"> </p>
+                <div class="grid">
+                  <div class="col1 row1" style="text-align: center;">
+                    <label for="cost-per-minute" class="asterisco">Cost Per Minute</label> <br>
+                    <span class="identificador">$</span><input type="number" name="cost-per-minute" id="cost-per-minute">
+                  </div>
+                </div>
+              </div>
+              <div class="bloque e"> 
+                <p class="titulo">Distance<input type="checkbox" name="distance" id="distance"></p> 
+                  <div class="grid">
+                    <div class="col1 row1">
+                      <label for="first-distance-from" class="asterisco">First Distance From</label>
+                      <input type="number" name="first-distance-from" id="first-distance-from"><span class="identificador">km</span>
+                    </div>
+                    <div class="col2 row1">
+                      <label for="first-distance-to" class="asterisco">First Distance To</label>
+                      <input type="number" name="irst-distance-to" id="irst-distance-to"><span class="identificador">km</span>
+                    </div>
+                    <div class="col3 row1" >
+                      <label for="first-distance-fee" class="asterisco">First Distance Fee</label>
+                      <input type="number" name="first-distance-fee" id="first-distance-fee"><span class="identificador">km</span>
+                    </div>
+                    <div class="col1 row2">
+                      <label for="second-distance-from" class="asterisco">Second Distance From</label>
+                      <input type="number" name="second-distance-from" id="second-distance-from"><span class="identificador">km</span>
+                    </div>
+                    <div class="col2 row2">
+                      <label for="second-distance-from" class="asterisco">Second Distance From</label>
+                      <input type="number" name="second-distance-from" id="second-distance-from"><span class="identificador">km</span>
+                    </div>
+                    <div class="col3 row2">
+                      <label for="second-distance-fee" class="asterisco">Second Distance Fee</label> <br>
+                      <span class="identificador">$</span><input type="number" name="second-distance-fee" id="second-distance-fee">
+                    </div>
+                    <div class="col1 row3">
+                      <label for="after-second-distance-fee" class="asterisco">After Second Distance Fee</label> <br>
+                      <span class="identificador">$</span><input type="number" name="after-second-distance-fee" id="after-second-distance-fee">
+                    </div>
+                  </div>
+              </div>
+            <input type="submit" name="enviar" id="enviar" title="enviar" value="Submit  " class="col6 row5" >
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

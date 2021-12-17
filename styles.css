@@ -1,0 +1,175 @@
+.nav-titulo{
+    background-color: rgb(0, 0, 0);
+    height: 6%;
+    color : white;
+    position: sticky ;
+    text-align: bottom;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 5px;
+    position: sticky;
+    top : 0;
+}
+body{
+    overflow: scroll;
+}
+
+hr{
+    max-width: 100%;
+    opacity: 0.4;
+}
+h2{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.nav{
+    background-color: #E5E8E8;
+    height:35px;
+    border-radius: 5px;
+    border: 1px solid  #CCD1D1;
+    position: sticky;
+    top : 7.5%; 
+}
+.nav ul {
+    margin: 10px 5px; 
+    border: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.nav li{
+    display: inline;
+    list-style: none;
+}
+
+.grid{
+    margin: 5px auto;
+    max-width:98%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.gridb{
+    margin: 5px auto;
+    max-width: 95%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 150px;
+    grid-template-rows: 25px;   
+}
+.bloque{
+    border: 1px solid #CCD1D1;
+    border-radius: 3px;
+}
+.a{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.b{
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 4;
+}
+.c{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+.d{
+    grid-row: 3;
+    grid-column: 3 ;
+}
+.e{
+    grid-row: 3 / span 2;
+    grid-column: 4 / span 3;
+}
+.main{
+    margin: 15px auto 0px;
+    max-width: 80%;
+    max-height: 1000%;
+    border: 1px solid #CCD1D1;
+    border-radius: 3px;
+}
+.titulo{
+    max-width: 100%;
+    margin: 0;
+    background-color: #E5E8E8;
+    border: 1px solid #CCD1D1;
+    padding: 5px;
+
+}
+.imagen{
+    margin: 0px auto;   
+    max-width: 30%;
+    height: 50%;
+}
+.identificador{
+    display: inline-block;
+    background-color: #E5E8E8;
+    border: 1px solid #CCD1D1; 
+    max-width: 100%;
+    height: 23px;
+    vertical-align: bottom;
+    text-align:end; 
+    margin: 0;
+    text-align: center;
+}
+.asterisco::after{
+    content: "*";
+    color: red;
+}
+select{
+    width: 80%;
+    border-radius: 5px;
+}
+label{
+    font-size: 12px;
+    font-weight: bold;
+}
+input{
+    border:1px solid #CCD1D1;
+    width: 80%;
+}
+input[type=number]{
+    height: 25px;
+    border-radius: 0px 5px 5px 0px;
+}
+.e input[type=number]{
+    border-radius: 5px 0px 0px 5px;
+}
+input:read-only{
+   border: none;
+}
+.col1{
+    grid-column: 1;
+}
+.col2{
+    grid-column:2;
+
+}
+.col3{
+    grid-column: 3;
+}
+.col4{
+    grid-column: 4;
+}
+.col6{
+    grid-column: 6;
+}
+.row1{
+    grid-row: 1;
+}
+.row2{
+    grid-row: 2;
+}
+.row3{
+    grid-row: 3;
+}
+.row4{
+    grid-row: 4;
+}
+.row5{
+    grid-row: 5;
+}
