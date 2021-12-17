@@ -1,3 +1,37 @@
+
+
+
+hr{
+    max-width: 100%;
+    opacity: 0.4;
+}
+h2{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.nav{
+    background-color: #E5E8E8;
+    height:35px;
+    border-radius: 5px;
+    border: 1px solid  #CCD1D1;
+    position: sticky;
+    top : 7.5%; 
+}
+.nav ul {
+    margin: 10px 5px; 
+    border: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.nav li{
+    display: inline;
+    list-style: none;
+}
+
 .grid{
     margin: 5px auto;
     max-width:98%;
